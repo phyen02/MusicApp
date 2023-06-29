@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        android:id="@+id/imgbBgPlaylist"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"></ImageButton>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"></View>
+
+    <ImageView
+        android:id="@+id/imgIconPlaylist"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="6dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_alignBottom="@id/imgbBgPlaylist"
+        android:scaleType="fitXY"></ImageView>
+
+    <TextView
+        android:id="@+id/txtTitlePlis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="5dp"
+        android:maxLines="1"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@id/imgIconPlaylist"
+        android:layout_alignBottom="@id/imgIconPlaylist"
+        android:text="Chill hits"
+        android:textSize="13dp"></TextView>
+</RelativeLayout>

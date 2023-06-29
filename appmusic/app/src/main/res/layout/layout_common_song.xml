@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000"
+    android:layout_gravity="center">
+    <ImageView
+        android:id="@+id/imgCommonSong"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="3dp"
+        android:scaleType="fitXY"></ImageView>
+    <TextView
+        android:id="@+id/txtTitleCommonSong"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:text="Ten bai hat"
+        android:textColor="#FFF"
+        android:layout_toRightOf="@+id/imgCommonSong"
+        android:layout_toLeftOf="@+id/imgFavoriteCommonSong"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="7dp"
+        android:textSize="18sp"
+        android:ellipsize="end"
+        android:maxLines="1"></TextView>
+    <TextView
+        android:id="@+id/txtArtistCommonSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ca si"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:layout_below="@+id/txtTitleCommonSong"
+        android:layout_toRightOf="@+id/imgCommonSong"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:singleLine="true"></TextView>
+    <ImageView
+        android:id="@+id/imgFavoriteCommonSong"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/iconlove"
+        android:layout_marginRight="10dp"></ImageView>
+</RelativeLayout>

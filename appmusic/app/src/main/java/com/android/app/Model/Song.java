@@ -1,0 +1,156 @@
+package com.android.app.Model;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
+
+public class Song implements Parcelable {
+
+    @SerializedName("idBaiHat")
+    @Expose
+    private String idBaiHat;
+    @SerializedName("tenBaiHat")
+    @Expose
+    private String tenBaiHat;
+    @SerializedName("hinhBaiHat")
+    @Expose
+    private String hinhBaiHat;
+    @SerializedName("casiBaiHat")
+    @Expose
+    private String casiBaiHat;
+    @SerializedName("linkBaiHat")
+    @Expose
+    private String linkBaiHat;
+    @SerializedName("idAlbum")
+    @Expose
+    private String idAlbum;
+    @SerializedName("idTheLoai")
+    @Expose
+    private String idTheLoai;
+    @SerializedName("idPlaylist")
+    @Expose
+    private String idPlaylist;
+    @SerializedName("LuotThich")
+    @Expose
+    private String luotThich;
+
+    protected Song(Parcel in) {
+        idBaiHat = in.readString();
+        tenBaiHat = in.readString();
+        hinhBaiHat = in.readString();
+        casiBaiHat = in.readString();
+        linkBaiHat = in.readString();
+        idAlbum = in.readString();
+        idTheLoai = in.readString();
+        idPlaylist = in.readString();
+        luotThich = in.readString();
+    }
+
+    public static final Creator<Song> CREATOR = new Creator<Song>() {
+        @Override
+        public Song createFromParcel(Parcel in) {
+            return new Song(in);
+        }
+
+        @Override
+        public Song[] newArray(int size) {
+            return new Song[size];
+        }
+    };
+
+    public String getIdBaiHat() {
+        return idBaiHat;
+    }
+
+    public void setIdBaiHat(String idBaiHat) {
+        this.idBaiHat = idBaiHat;
+    }
+
+    public String getTenBaiHat() {
+        return tenBaiHat;
+    }
+
+    public void setTenBaiHat(String tenBaiHat) {
+        this.tenBaiHat = tenBaiHat;
+    }
+
+    public String getHinhBaiHat() {
+        return hinhBaiHat;
+    }
+
+    public void setHinhBaiHat(String hinhBaiHat) {
+        this.hinhBaiHat = hinhBaiHat;
+    }
+
+    public String getCasiBaiHat() {
+        return casiBaiHat;
+    }
+
+    public void setCasiBaiHat(String casiBaiHat) {
+        this.casiBaiHat = casiBaiHat;
+    }
+
+    public String getLinkBaiHat() {
+        return linkBaiHat;
+    }
+
+    public void setLinkBaiHat(String linkBaiHat) {
+        this.linkBaiHat = linkBaiHat;
+    }
+
+    public String getIdAlbum() {
+        return idAlbum;
+    }
+
+    public void setIdAlbum(String idAlbum) {
+        this.idAlbum = idAlbum;
+    }
+
+    public String getIdTheLoai() {
+        return idTheLoai;
+    }
+
+    public void setIdTheLoai(String idTheLoai) {
+        this.idTheLoai = idTheLoai;
+    }
+
+    public String getIdPlaylist() {
+        return idPlaylist;
+    }
+
+    public void setIdPlaylist(String idPlaylist) {
+        this.idPlaylist = idPlaylist;
+    }
+
+    public String getLuotThich() {
+        return luotThich;
+    }
+
+    public void setLuotThich(String luotThich) {
+        this.luotThich = luotThich;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(@NonNull Parcel dest, int flags) {
+        dest.writeString(idBaiHat);
+        dest.writeString(tenBaiHat);
+        dest.writeString(hinhBaiHat);
+        dest.writeString(casiBaiHat);
+        dest.writeString(linkBaiHat);
+        dest.writeString(idAlbum);
+        dest.writeString(idTheLoai);
+        dest.writeString(idPlaylist);
+        dest.writeString(luotThich);
+    }
+}

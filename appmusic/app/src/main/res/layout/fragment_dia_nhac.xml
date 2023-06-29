@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleViewCd"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:src="@drawable/iconcd2"
+        android:layout_centerInParent="true"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#000"/>
+
+</RelativeLayout>

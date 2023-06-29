@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tvSongListIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="15dp"
+            android:text="1"></TextView>
+        <TextView
+            android:id="@+id/tvSongListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:singleLine="true"
+            android:text="Ten nhac"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:layout_toRightOf="@+id/tvSongListIndex"
+            android:ellipsize="end"></TextView>
+        <TextView
+            android:id="@+id/tvSongListArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSongListTitle"
+            android:layout_toRightOf="@id/tvSongListIndex"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#979797"
+            android:text="Ca si"
+            android:textSize="18sp"></TextView>
+        <ImageView
+            android:id="@+id/ivSongListLoved"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/iconlove"></ImageView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:id="@+id/ivSearch"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"></ImageView>
+    <TextView
+        android:id="@+id/tvSearchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxWidth="250dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/ivSearch"
+        android:text="Title"
+        android:textColor="#fff"
+        android:textSize="18dp"></TextView>
+    <TextView
+        android:id="@+id/tvSearchArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxWidth="250dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/ivSearch"
+        android:layout_below="@+id/tvSearchTitle"
+        android:text="Artist"
+        android:textColor="#F1EEEE"
+        android:textSize="16dp"></TextView>
+    <ImageView
+        android:id="@+id/ivSearchLove"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/iconlove"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"></ImageView>
+
+</RelativeLayout>

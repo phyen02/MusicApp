@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#000">
+
+    <FrameLayout
+        android:id="@+id/framePlaylist_List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/ivPlaylist_List"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:scaleType="fitXY"></ImageView>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tvPlaylist_ListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:lines="2"
+        android:maxWidth="200dp"
+        android:gravity="left"
+        android:text="Ten playlist"
+        android:textColor="#FFF"
+        android:textSize="15sp"></TextView>
+
+</LinearLayout>
