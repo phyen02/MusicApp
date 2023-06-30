@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.app.Activity.PlayMusicActivity;
+import com.android.app.Activity.SongListActivity;
 import com.android.app.Model.Artist;
 import com.android.app.Model.Song;
 import com.android.app.R;
@@ -66,8 +67,8 @@ public class ArtistAdapter extends RecyclerView.Adapter<ArtistAdapter.ViewHolder
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(context, PlayMusicActivity.class);
-                    intent.putExtra("songlist", artist_array.get(getAdapterPosition()));
+                    Intent intent = new Intent(context, SongListActivity.class);
+                    intent.putExtra("itemartist", artist_array.get(getAdapterPosition()));
                     context.startActivity(intent);
                 }
             });

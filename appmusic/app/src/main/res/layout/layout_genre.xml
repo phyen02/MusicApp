@@ -32,6 +32,7 @@
             android:maxLines="1"
             android:ellipsize="end"
             android:text="Ten the loai"
+            android:fontFamily="@font/arimo_bold"
             android:textSize="20sp"
             android:maxWidth="200dp"
             android:textColor="#FFF"

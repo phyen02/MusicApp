@@ -117,7 +117,7 @@ public class SongListAdapter extends RecyclerView.Adapter<SongListAdapter.ViewHo
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(context, PlayMusicActivity.class);
-                    intent.putExtra("songlist", song_array.get(getAdapterPosition()));
+                    intent.putExtra("playmusic", song_array.get(getAdapterPosition()));
                     context.startActivity(intent);
                 }
             });

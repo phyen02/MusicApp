@@ -63,7 +63,7 @@ public class PlaylistfortodayAdapter extends RecyclerView.Adapter<Playlistfortod
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(context, SongListActivity.class);
-                    intent.putExtra("itemplaylist", playlist_array.get(getPosition()));
+                    intent.putExtra("itemplaylist", playlist_array.get(getAdapterPosition()));
                     context.startActivity(intent);
                 }
             });

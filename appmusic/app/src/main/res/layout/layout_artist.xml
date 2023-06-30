@@ -30,6 +30,7 @@
             android:ellipsize="end"
             android:maxLines="2"
             android:text="Artist"
+            android:fontFamily="@font/arimo_bold"
             android:textAlignment="center"
             android:textColor="#B6B6B6"
             android:textSize="20sp"

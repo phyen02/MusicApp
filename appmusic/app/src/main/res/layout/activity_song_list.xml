@@ -112,6 +112,7 @@
                 android:layout_marginLeft="50dp"
                 android:elevation="0dp"
                 android:text="TextView"
+                android:fontFamily="@font/arimo_bold"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
         </RelativeLayout>

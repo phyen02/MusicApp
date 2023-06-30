@@ -62,7 +62,7 @@ public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.ViewHolder> 
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(context, SongListActivity.class);
-                    intent.putExtra("itemgenre", genre_array.get(getPosition()));
+                    intent.putExtra("itemgenre", genre_array.get(getAdapterPosition()));
                     context.startActivity(intent);
                 }
             });

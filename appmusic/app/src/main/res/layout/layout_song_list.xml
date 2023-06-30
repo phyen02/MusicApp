@@ -25,6 +25,7 @@
             android:maxWidth="250dp"
             android:singleLine="true"
             android:text="Ten nhac"
+            android:fontFamily="@font/arimo_bold"
             android:textSize="20sp"
             android:textColor="#FFF"
             android:layout_toRightOf="@+id/tvSongListIndex"
@@ -39,6 +40,7 @@
             android:singleLine="true"
             android:textColor="#979797"
             android:text="Ca si"
+            android:fontFamily="@font/arimo_bold"
             android:textSize="18sp"></TextView>
         <ImageView
             android:id="@+id/ivSongListLoved"

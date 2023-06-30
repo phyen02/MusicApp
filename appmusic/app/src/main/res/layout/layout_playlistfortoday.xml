@@ -43,5 +43,6 @@
         android:layout_toRightOf="@id/imgIconPlaylist"
         android:layout_alignBottom="@id/imgIconPlaylist"
         android:text="Chill hits"
+        android:fontFamily="@font/arimo_bold"
         android:textSize="13dp"></TextView>
 </RelativeLayout>

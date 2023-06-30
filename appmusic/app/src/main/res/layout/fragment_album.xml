@@ -17,6 +17,7 @@
             android:textColor="#FFF"
             android:textSize="26sp"
             android:textStyle="bold"
+            android:fontFamily="@font/arimo_bold"
             android:padding="7dp"></TextView>
 
         <TextView
@@ -28,6 +29,7 @@
             android:paddingTop="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
+            android:fontFamily="@font/arimo_bold"
             android:drawableLeft="@drawable/iconviewmore">
         </TextView>
 

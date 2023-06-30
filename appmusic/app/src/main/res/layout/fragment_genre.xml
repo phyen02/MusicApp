@@ -16,6 +16,7 @@
             android:layout_height="wrap_content"
             android:padding="7dp"
             android:text="Thể loại"
+            android:fontFamily="@font/arimo_bold"
             android:textSize="26sp"
             android:textStyle="bold"
             android:textColor="#FFF">

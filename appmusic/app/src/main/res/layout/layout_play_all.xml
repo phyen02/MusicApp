@@ -13,6 +13,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="1"
+            android:fontFamily="@font/arimo_bold"
             android:textColor="#000"
             android:textSize="18sp"></TextView>
 
@@ -27,6 +28,7 @@
             android:maxWidth="250dp"
             android:singleLine="true"
             android:text="Song Title"
+            android:fontFamily="@font/arimo_bold"
             android:textColor="#000"
             android:textSize="18sp"></TextView>
 
@@ -42,6 +44,7 @@
             android:maxWidth="250dp"
             android:singleLine="true"
             android:text="Artist"
+            android:fontFamily="@font/arimo_bold"
             android:textColor="#000"
             android:textSize="16sp"></TextView>
         <ImageView

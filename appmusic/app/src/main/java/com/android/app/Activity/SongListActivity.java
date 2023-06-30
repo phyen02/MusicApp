@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.android.app.Adapter.SongListAdapter;
 import com.android.app.Model.Album;
+import com.android.app.Model.Artist;
 import com.android.app.Model.Genre;
 import com.android.app.Model.Playlist;
 import com.android.app.Model.Song;
@@ -53,6 +54,7 @@ public class SongListActivity extends AppCompatActivity {
     Playlist playlist;
     Genre genre;
     Album album;
+    Artist artist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,12 +80,37 @@ public class SongListActivity extends AppCompatActivity {
             setValueInView(album.getTenAlbum(), album.getHinhAlbum());
             GetDataAlbum(album.getIdAlbum());
         }
+
+        if(artist != null && !artist.getTenCaSi().equals("")){
+            setValueInView(artist.getTenCaSi(), artist.getHinhCaSi());
+            GetDataArtist(artist.getIdCaSi());
+        }
     }
 
     private void setValueInView(String ten, String hinhPlaylist) {
         Picasso.get().load(hinhPlaylist).into(ivSongList);
         tvCollapsing.setText(ten);
         getSupportActionBar().setTitle(ten);
+    }
+
+    private void GetDataArtist(String idCaSi) {
+        DataService dataService = APIService.getService();
+        Call<List<Song>> callback = dataService.GetSongArtistList(idCaSi);
+        callback.enqueue(new Callback<List<Song>>() {
+            @Override
+            public void onResponse(Call<List<Song>> call, Response<List<Song>> response) {
+                song_array = (ArrayList<Song>) response.body();
+                SongListAdapter = new SongListAdapter(SongListActivity.this, song_array);
+                recyclerViewSongList.setLayoutManager(new LinearLayoutManager(SongListActivity.this));
+                recyclerViewSongList.setAdapter(SongListAdapter);
+                eventClick();
+            }
+
+            @Override
+            public void onFailure(Call<List<Song>> call, Throwable t) {
+
+            }
+        });
     }
 
     private void GetDataPlaylist(String idPlaylist) {
@@ -157,6 +184,9 @@ public class SongListActivity extends AppCompatActivity {
             }
             if(intent.hasExtra("itemalbum")){
                 album = (Album) intent.getSerializableExtra("itemalbum");
+            }
+            if(intent.hasExtra("itemartist")){
+                artist = (Artist) intent.getSerializableExtra("itemartist");
             }
         }
     }

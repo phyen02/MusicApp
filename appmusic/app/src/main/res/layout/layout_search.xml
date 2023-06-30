@@ -22,6 +22,7 @@
         android:layout_marginTop="7dp"
         android:layout_toRightOf="@+id/ivSearch"
         android:text="Title"
+        android:fontFamily="@font/arimo_bold"
         android:textColor="#fff"
         android:textSize="18dp"></TextView>
     <TextView
@@ -36,6 +37,7 @@
         android:layout_toRightOf="@+id/ivSearch"
         android:layout_below="@+id/tvSearchTitle"
         android:text="Artist"
+        android:fontFamily="@font/arimo_bold"
         android:textColor="#F1EEEE"
         android:textSize="16dp"></TextView>
     <ImageView

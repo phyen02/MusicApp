@@ -13,6 +13,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="32dp"
         android:text="Danh Sách Phát"
+        android:fontFamily="@font/arimo_bold"
         android:textColor="#FFFFFF"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"

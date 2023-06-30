@@ -2,14 +2,12 @@ package com.android.app.Fragment;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -22,12 +20,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.app.Adapter.SearchAdapter;
+import com.android.app.Model.Artist;
 import com.android.app.Model.Song;
 import com.android.app.R;
 import com.android.app.ServiceAPI.APIService;
 import com.android.app.ServiceAPI.DataService;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 

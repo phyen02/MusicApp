@@ -28,6 +28,7 @@
         android:maxWidth="200dp"
         android:gravity="left"
         android:text="Ten playlist"
+        android:fontFamily="@font/arimo_bold"
         android:textColor="#FFF"
         android:textSize="15sp"></TextView>
 
